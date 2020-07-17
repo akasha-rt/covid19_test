@@ -7,7 +7,7 @@ import (
 	"net"
 	"strings"
 
-	DataFile "github.com/inam700/covid19_project/csvdata"
+	DataFile "github.com/akasha000/covid19_test"
 )
 
 var dataset = DataFile.Load("covid_final_data.csv")
@@ -29,7 +29,7 @@ func main() {
 		log.Fatal("failed to create listener", err)
 	}
 	defer ln.Close()
-	log.Println("*** COVID19 PROJECT ***")
+	log.Println("*** COVID19 TEST ***")
 	log.Printf("Service Started: (%s) %s \n", network, address)
 	for {
 		conn, err := ln.Accept()
